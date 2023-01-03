@@ -6,6 +6,17 @@ on:
       - main
 
 jobs:
+  patch-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+          registry-url: https://registry.npmjs.org/
+      - run: npm version patch
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
   publish-npm:
     runs-on: ubuntu-latest
     steps:
