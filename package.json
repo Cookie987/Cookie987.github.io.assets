@@ -1,0 +1,22 @@
+{
+  "name": "cookie987-assets",
+  "version": "1.0.0",
+  "description": "静态资源存储",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cookie987/Cookie987.github.io.assets.git"
+  },
+  "keywords": [
+    "图床"
+  ],
+  "author": "cookie987",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cookie987/Cookie987.github.io.assets/issues"
+  },
+  "homepage": "https://github.com/Cookie987/Cookie987.github.io.assets#readme"
+}
