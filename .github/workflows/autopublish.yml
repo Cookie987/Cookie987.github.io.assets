@@ -21,6 +21,7 @@ jobs:
         with:
           default: prerelease
           target-branch: 'main'
+          patch-wording:  'update,Qexo,[ImgBot]'
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
