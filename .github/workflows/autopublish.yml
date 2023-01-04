@@ -22,6 +22,10 @@ jobs:
           default: prerelease
           rc-wording:     'RELEASE,alpha,PicX'
           target-branch: 'main'
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+          registry-url: https://registry.npmjs.org/
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
