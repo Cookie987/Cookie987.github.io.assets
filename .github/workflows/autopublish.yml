@@ -20,7 +20,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         with:
           default: prerelease
-          rc-wording:     'RELEASE,alpha,PicX'
           target-branch: 'main'
       - uses: actions/setup-node@v1
         with:
