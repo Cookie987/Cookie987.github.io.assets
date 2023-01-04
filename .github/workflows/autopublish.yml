@@ -4,11 +4,22 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches: 
+      - main
 
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
+      - name:  'Automated Version Bump'
+        uses:  'phips28/gh-action-bump-version@master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        with:
+          default: prerelease
+          rc-wording:     'RELEASE,alpha,PicX'
+
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
