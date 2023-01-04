@@ -18,7 +18,8 @@ jobs:
         with:
           default: prerelease
           target-branch: 'main'
-          patch-wording:  'Update,Qexo,[ImgBot]'
+          minor-wording:  '[ImgBot]'
+          patch-wording:  'Update,Qexo'
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
