@@ -1,6 +1,6 @@
 {
   "name": "cookie987-assets",
-  "version": "1.4.31",
+  "version": "1.4.32",
   "description": "静态资源存储",
   "main": "index.js",
   "scripts": {
